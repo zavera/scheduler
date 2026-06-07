@@ -319,6 +319,11 @@ function reportsModule() {
     window.location.href = "report_builder.html";
 }
 
+function chatbotModule() {
+    sessionStorage.setItem("userData", JSON.stringify(user));
+    window.location.href = "chatbot.html";
+}
+
 function logoutUser() {
     sessionStorage.removeItem("userData");
     sessionStorage.removeItem("eventid");
